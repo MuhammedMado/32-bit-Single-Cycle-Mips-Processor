@@ -34,6 +34,7 @@ module MainDecoder
 								
 								6'b000000:                     //R type
 								begin
+									ALUOp    = 2'b10 ;
 									RegWrite = 1'b1;
 									RegDest = 1'b1;
 								end
