@@ -1,4 +1,4 @@
-# 32-bit_single_cycle_MIPS_processor
+# 32-bit_Single_Cycle_MIPS_Processor
 This repository contains the Verilog implementation of a single-cycle MIPS processor. The single-cycle design is a simple and straightforward approach to implementing a MIPS architecture, where each instruction fetch, decode, execute, memory access, and write-back stage is completed within a single clock cycle.
 
 ## Project Overview
