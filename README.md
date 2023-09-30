@@ -45,27 +45,27 @@ The MIPS architecture provides a variety of instructions, and this single-cycle 
 To better understand the instruction formats for I-type, R-type, and J-type instructions in MIPS, refer to the following diagrams:
 
 1. I-type Operand Diagram:
-  ![I-type](https://github.com/basemhesham/32-bit_single_cycle_MIPS_processor/assets/136960296/b0e721dd-46fc-49dc-87c5-489a17930964)
+![image](https://github.com/MuhammedMado/32-bit-Single-Cycle-Mips-Processor/assets/128540277/809d2d3c-b7e7-44e0-8e32-71f1fd49f5ad)
 
 
 2. R-type Operand Diagram:
-  ![R-type](https://github.com/basemhesham/32-bit_single_cycle_MIPS_processor/assets/136960296/e119bf58-204f-46cb-8a30-1dc5716892ca)
+![image](https://github.com/MuhammedMado/32-bit-Single-Cycle-Mips-Processor/assets/128540277/b31fee5d-1a3e-4cfd-be88-d6b71c163146)
 
 
 3. J-type Operand Diagram:
-   ![J-type](https://github.com/basemhesham/32-bit_single_cycle_MIPS_processor/assets/136960296/26ab0c76-1120-48dd-95de-55823b1f83e2)
+![image](https://github.com/MuhammedMado/32-bit-Single-Cycle-Mips-Processor/assets/128540277/ee10155c-afe3-4aed-b301-45c2b7f622b6)
 
 ## Single-Cycle MIPS Processor diagram
 
 The following image represents the schematic diagram of the complete single-cycle MIPS processor:
-![Complete single-cycle MIPS processor](https://github.com/basemhesham/32-bit_single_cycle_MIPS_processor/assets/136960296/5f56dedd-0686-45e8-a429-2330f72ee35d)
+![image](https://github.com/MuhammedMado/32-bit-Single-Cycle-Mips-Processor/assets/128540277/ab12cb41-049d-4f56-81da-8deac6dd8164)
 
 Top module view:
-![Top Module](https://github.com/basemhesham/32-bit_single_cycle_MIPS_processor/assets/136960296/04d297bd-8eff-4e27-91e1-cd2e2227303e)
+![image](https://github.com/MuhammedMado/32-bit-Single-Cycle-Mips-Processor/assets/128540277/2e12fc5b-76e6-4ac4-a880-b3a405150ae1)
 
 ## Main modules:
 1. ALU : The ALU forms the heart of most computer systems. The 3-bit ALUControl signal specifies the operation. The ALU generates 32-bit ALUResult and a zero flag to indicate if result == 0.
-![ALUControl](https://github.com/basemhesham/32-bit_single_cycle_MIPS_processor/assets/136960296/43601d8c-5df2-4207-bed5-f82dea8a2d3d)
+![image](https://github.com/MuhammedMado/32-bit-Single-Cycle-Mips-Processor/assets/128540277/fb8605a6-d1c3-48bd-b41a-1820e4cd02c5)
 
 2. Program counter: program counter register contains the 32-bit address to execute. The PC is updated at the rising edge of clk and cleared whenever the active low reset is asserted asynchronously.
 
@@ -80,13 +80,14 @@ opcode and funct fields of the instrucrion, instr31:26 and instr5:0 . Most of th
 control information comes from the opcode, but R-type instructions also use
 the funct field to determine the ALU operation. Thus, we will simplify that by
 factoring control unit into two blocks: ALU decoder and main decoder
-![Control_Unit](https://github.com/basemhesham/32-bit_single_cycle_MIPS_processor/assets/136960296/b1c3fda4-f172-41f5-b989-cd2aa49badca)
+![Control_Unit]![image](https://github.com/MuhammedMado/32-bit-Single-Cycle-Mips-Processor/assets/128540277/099614a7-3318-4914-adaf-9c5083763e30)
 
 ALU decoder truth table:
-![ALU decoder truth table](https://github.com/basemhesham/32-bit_single_cycle_MIPS_processor/assets/136960296/842e9a9e-9e71-4946-90f8-d9e6c6e2d9f0)
+![ALU decoder truth table]![image](https://github.com/MuhammedMado/32-bit-Single-Cycle-Mips-Processor/assets/128540277/c214cb02-b243-4e7f-bc01-5dee2be02203)
 
 Main decoder truth table:
-![main decoder truth table](https://github.com/basemhesham/32-bit_single_cycle_MIPS_processor/assets/136960296/6b9b4656-7eb2-4c3c-8523-fae5a89c1d24)
+![main decoder truth table]![image](https://github.com/MuhammedMado/32-bit-Single-Cycle-Mips-Processor/assets/128540277/c5ef2375-1d7a-4624-b86b-eaa50dc066a6)
+
 
 7. Small modules:
    
