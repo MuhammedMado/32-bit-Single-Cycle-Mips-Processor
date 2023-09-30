@@ -4,7 +4,7 @@ Certainly, here's a consolidated version that combines the provided information 
 
 This repository presents the Verilog implementation of a single-cycle MIPS processor, offering an efficient and functional approach to executing MIPS instruction set architecture (ISA) instructions. In this single-cycle design, each instruction's fetch, decode, execute, memory access, and write-back stages occur within a single clock cycle.
 
-**Project Overview:**
+## Project Overview
 
 The primary objective of this project is to create a single-cycle MIPS processor using Verilog HDL, capable of executing a subset of MIPS ISA instructions. This subset encompasses essential instructions, including arithmetic and logical operations, memory access, branching, and jumping.
 
