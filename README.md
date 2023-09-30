@@ -80,13 +80,13 @@ opcode and funct fields of the instrucrion, instr31:26 and instr5:0 . Most of th
 control information comes from the opcode, but R-type instructions also use
 the funct field to determine the ALU operation. Thus, we will simplify that by
 factoring control unit into two blocks: ALU decoder and main decoder
-![Control_Unit]![image](https://github.com/MuhammedMado/32-bit-Single-Cycle-Mips-Processor/assets/128540277/099614a7-3318-4914-adaf-9c5083763e30)
+[image](https://github.com/MuhammedMado/32-bit-Single-Cycle-Mips-Processor/assets/128540277/099614a7-3318-4914-adaf-9c5083763e30)
 
 ALU decoder truth table:
-![ALU decoder truth table]![image](https://github.com/MuhammedMado/32-bit-Single-Cycle-Mips-Processor/assets/128540277/c214cb02-b243-4e7f-bc01-5dee2be02203)
+[image](https://github.com/MuhammedMado/32-bit-Single-Cycle-Mips-Processor/assets/128540277/c214cb02-b243-4e7f-bc01-5dee2be02203)
 
 Main decoder truth table:
-![main decoder truth table]![image](https://github.com/MuhammedMado/32-bit-Single-Cycle-Mips-Processor/assets/128540277/c5ef2375-1d7a-4624-b86b-eaa50dc066a6)
+[image](https://github.com/MuhammedMado/32-bit-Single-Cycle-Mips-Processor/assets/128540277/c5ef2375-1d7a-4624-b86b-eaa50dc066a6)
 
 
 7. Small modules:
